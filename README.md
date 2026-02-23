@@ -46,5 +46,5 @@ The system transitions through 15 distinct states to manage security:
 * **FPGA Board:** Nexys A7.
 * **Input Buttons:** `ADD_DIGIT`, `CNT_UP`, `CNT_DOWN`.
 * **Input Switch:** `RESET`.
-* **Clock:** `CLK` (100 MHz)[cite: 76, 147].
+* **Clock:** `CLK` (100 MHz).
 * **Outputs:** 2 Status LEDs, 7-Segment Display (Anode/Cathode).
