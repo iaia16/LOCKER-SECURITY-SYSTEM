@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+
+entity FREQUENCY_DIVIDER is
+    Port ( CLK100 : in STD_LOGIC;
+           CLK_OUT : out STD_LOGIC);
+end FREQUENCY_DIVIDER;
+
+architecture Behavioral of FREQUENCY_DIVIDER is
+
+BEGIN
+
+PROCESS(CLK100)
+VARIABLE AUX : STD_LOGIC_VECTOR (24 DOWNTO 0) := (OTHERS => '0');
+BEGIN
+    IF CLK100'EVENT AND CLK100 = '1' THEN
+        AUX := AUX+1;
+    END IF;
+    CLK_OUT <= AUX(24);
+END PROCESS;
+end Behavioral;
