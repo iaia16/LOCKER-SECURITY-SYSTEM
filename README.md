@@ -42,7 +42,7 @@ The system transitions through 15 distinct states to manage security:
 1. **Locking:** Press ADD_DIGIT. Use UP/DOWN to select the first character, then press ADD_DIGIT to confirm. Repeat for three digits. After the final press, the SSD clears and the FREE_OCCUPIED LED turns ON.
 2. **Unlocking:** Press ADD_DIGIT to start entry. Re-enter the 3-digit code. If the PIN matches the stored code, the FREE_OCCUPIED LED turns OFF.
 
-## 🛠️ Hardware Requirements
+## Hardware Requirements
 * **FPGA Board:** Nexys A7.
 * **Input Buttons:** `ADD_DIGIT`, `CNT_UP`, `CNT_DOWN`.
 * **Input Switch:** `RESET`.
